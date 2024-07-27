@@ -60,6 +60,15 @@ xui.Class('App', 'xui.Module',{
                 .setValue("1234")
             );
             
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button6")
+                .setLeft("28.952380952380953em")
+                .setTop("16.761904761904763em")
+                .setWidth("8.304761904761905em")
+                .setCaption("Login")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
