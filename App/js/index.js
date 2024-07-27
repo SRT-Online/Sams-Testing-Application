@@ -19,7 +19,34 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label9")
+                .setLeft("9.285714285714286em")
+                .setTop("1.0714285714285714em")
+                .setWidth("7.357142857142857em")
+                .setHeight("1.25em")
+                .setCaption("LinksCo. | Login")
+                .setCustomStyle({
+                    "KEY" : {
+                        "font-size" : "28px"
+                    }
+                })
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input6")
+                .setLeft("21.333333333333332em")
+                .setTop("9.142857142857142em")
+                .setWidth("18em")
+                .setHeight("10em")
+                .setLabelSize("8em")
+                .setLabelCaption("Text Area")
+                .setMultiLines(true)
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
